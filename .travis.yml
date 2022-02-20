@@ -3,9 +3,9 @@ services:
   - docker
 
 before_insatll:
-  - docker build -t chang516/docker-react -f Dockerfile.dev .
+  - docker build -t willchang6471/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run change516/docker-react npm run test -- --coverage
+  - docker run willchang6471/docker-react npm run test -- --coverage
 
 
