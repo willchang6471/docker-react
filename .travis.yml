@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-before_insatll:
+before_install:
   - docker build -t willchang6471/docker-react -f Dockerfile.dev .
 
 script:
