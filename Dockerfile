@@ -6,6 +6,7 @@ COPY . .
 RUN npm run build
 
 FROM nginx
+EXPOSE 80
 
 # /app/build <-- all the production ouput is in the directory, that's all we care about
 COPY --from=builder /app/build /usr/share/nginx/html
